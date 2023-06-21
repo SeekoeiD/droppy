@@ -1227,7 +1227,7 @@ function handleUploadRequest(req, res) {
     closeConnection();
   });
 
-  req.on("close", async () => {
+  /*req.on("close", async () => {
     if (!done) {
       log.info(req, res, "Upload cancelled");
 
@@ -1239,7 +1239,7 @@ function handleUploadRequest(req, res) {
       filetree.updateDir(dstDir);
       closeConnection();
     }
-  });
+  });*/
 
   req.pipe(busboy);
 
