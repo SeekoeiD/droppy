@@ -35,7 +35,7 @@ utils.mkdir = async function(dir, cb) {
 };
 
 utils.rm = function(p, cb) {
-  fs.rmdir(p, {recursive: true}, cb);
+  fs.rm(p, {recursive: true}, cb);
 };
 
 utils.move = function(src, dst, cb) {
